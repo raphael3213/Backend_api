@@ -6,7 +6,7 @@ var express = require('express');
 var app = express();
 var url=require('url');
 var bodyparser=require('body-parser');
-var cors=require
+var cors=require('cors')
 
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
