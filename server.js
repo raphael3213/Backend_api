@@ -5,6 +5,8 @@
 var express = require('express');
 var app = express();
 var url=require('url');
+var bodyparser=require('body-parser');
+var cors=require
 
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
@@ -22,8 +24,8 @@ app.get("/date/:dater",function(request,response){
   var dateval=request.param.dater;
   
   var options={
-    years:"numeric"
-    ,months:"long"
+    year:"numeric"
+    ,month:"long"
     ,day:"numeric"
   };
   if(isNaN(dateval))
