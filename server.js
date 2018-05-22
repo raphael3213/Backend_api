@@ -13,12 +13,13 @@ app.use(express.static('public'));
 app.use(bodyparser.json())
 app.use(cors());
 var urlobj;
-// http://expressjs.com/en/starter/basic-routing.html
+
 app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
  
   
 });
+
 app.get("/date/:dater",function(request,response){
   var dateval=request.params.dater;
   
